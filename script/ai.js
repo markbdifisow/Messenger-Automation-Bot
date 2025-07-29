@@ -21,7 +21,7 @@ module.exports.run = async function({ api, event, args }) {
   const messageID = event.messageID;
 
   if (!finalPrompt && !event.messageReply?.attachments?.[0]?.url) {
-    return api.sendMessage("❌ Please provide a prompt or reply to an image.", threadID, messageID);
+    return api.sendMessage("🤖𝗞𝗘𝗜𝗝𝗢 𝗙𝗕𝗕𝗢𝗧: Please provide a prompt or reply to an image.", threadID, messageID);
   }
 
   api.sendMessage('🤖 𝗔𝗜 𝗜𝗦 𝗣𝗥𝗢𝗖𝗘𝗦𝗦𝗜𝗡𝗚 𝗬𝗢𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧...', threadID, async (err, info) => {
