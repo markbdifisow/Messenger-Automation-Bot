@@ -13,7 +13,7 @@ function formatFont(text) {
 }
 
 module.exports.config = {
-  name: "vern",
+  name: "boss",
   version: "1.0.0",
   role: 0,
   hasPrefix: false,
