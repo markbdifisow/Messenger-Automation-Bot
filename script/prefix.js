@@ -9,7 +9,7 @@ try {
   config = JSON.parse(fs.readFileSync(path.join(__dirname, "../config.json")));
 } catch (e) {
   config.prefix = "-";
-  config.botName = "𝘃𝗲𝗿𝗻";
+  config.botName = "𝗞𝗘𝗜𝗝𝗢";
 }
 
 module.exports.config = {
