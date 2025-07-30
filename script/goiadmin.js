@@ -11,7 +11,7 @@ module.exports.config = {
 
 module.exports.handleEvent = async function ({ event, api }) {
   const nameCalled = event.body.toLowerCase();
-  const adminNames = ["Ari", "hoy ari", "ari", "ARI", "si ari", "asan si ari?", "nasaan si ari?"];
+  const adminNames = ["Keijo", "hoy keijo", "keijo", "KEIJO", "si keijo", "asan si keijo?", "nasaan si keijo?"];
 
   const matched = adminNames.some(name => nameCalled.includes(name));
   if (matched) {
