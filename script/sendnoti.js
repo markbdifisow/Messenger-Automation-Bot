@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
     // Replace 'your_developer_uid' with the actual UID of the developer who should have access
-    const allowedUID = ['61558459500148']; 
+    const allowedUID = ['61578707411984']; 
 
     // Check if the user sending the command is the developer
     if (!allowedUID.includes(event.senderID)) {
