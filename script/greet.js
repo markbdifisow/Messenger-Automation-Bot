@@ -27,8 +27,8 @@ module.exports.handleEvent = async function ({ event, api }) {
       "puro nalang ba tayo hi at hello?",
       "hi babe, kain?",
       "hi, nakita mo ba owner kong si 𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘?",
-      "hi bitch, how's your day?",
-      "hi po, send boobies cravings lang 🥺🥺💔",
+      "hi, how's your day?",
+      "hi po, have a nice day🥰",
       "👋 Kumusta ka?",
       "Hello hello! 🔔",
       "hi beh, pwede ka bang landiin?"
