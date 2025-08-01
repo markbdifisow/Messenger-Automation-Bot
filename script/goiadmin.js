@@ -2,28 +2,85 @@ module.exports.config = {
   name: "goiadmin",
   version: "1.0.0",
   hasPermission: 0,
-  credits: "AJ/ARI",
-  description: "Auto reply kapag binanggit ang pangalan ng admin",
+  credits: "Keijo",
+  description: "Auto reply if you try to mention my owner or admins and developers",
   commandCategory: "autobot",
-  usages: "Automatic reply kapag tinawag si admin",
+  usages: "Automatic reply",
   cooldowns: 2
 };
 
 module.exports.handleEvent = async function ({ event, api }) {
   const nameCalled = event.body.toLowerCase();
-  const adminNames = ["Keijo", "hoy keijo", "keijo", "KEIJO", "si keijo", "asan si keijo?", "nasaan si keijo?"];
+  const adminNames = ["Keijo", "hoy keijo", "keijo", "KEIJO", "si keijo", "asan si keijo", "nasaan si keijo?"];
 
   const matched = adminNames.some(name => nameCalled.includes(name));
   if (matched) {
     const responses = [
-      "tangina ano na naman kailangan mo sa owner ko? 🤨",
-      "wait mo lang boss, busy pa ata developer ko",
-      "Yes? hanap mo pogi kong tropa?",
-      "babe nalang itawag mo sa owner ko 😏😏",
-      "wag isturbo may kabebetime pa owner ko.",
-      "isa pang tawag sa owner ko ipapa-laplap kita sa kanya 🙄",
-      "tawag nang tawag eh may kailangan ka ba sa boss ko? 😠😠",
-      "anong kailangan mo sa boss ko⁉️"
+      "
+❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+.",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+",
+      "❗𝗕𝗨𝗦𝗬
+━━━━━━━━━━━━━━━━
+💬🔊 𝗞𝗲𝗶𝗷𝗼 - stop
+mentioning me okay
+BCS I'm busy!! 
+━━━━━━━━━━━━━━━━
+𝗞𝗘𝗜𝗝𝗢 𝗘𝗡𝗥𝗜𝗟𝗘❗
+"
     ];
     const randomReply = responses[Math.floor(Math.random() * responses.length)];
     return api.sendMessage(randomReply, event.threadID, event.messageID);
@@ -32,4 +89,3 @@ module.exports.handleEvent = async function ({ event, api }) {
 
 module.exports.run = async function () {
   // No run needed, this command works on message events
-};
