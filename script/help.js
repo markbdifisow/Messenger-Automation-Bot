@@ -93,7 +93,15 @@ module.exports.handleEvent = async function({
                 messageID,
                 body
         } = event;
-        const message = prefix ? 'This is my prefix: ' + prefix : "𝗠𝘆 𝗽𝗿𝗲𝗳𝗶𝘅 𝗶𝘀...";
+        const message = prefix ? 'This is my prefix: ' + prefix : "❯  ❲ 🌌 ❳  𝗞𝗘𝗜𝗝𝗢𝔼ℕℝ𝕀𝕃𝔼
+━━━━━━━━━━━━━━━
+🔮 𝗞𝗲𝗶𝗷𝗼'𝘀 𝗦𝘆𝘀𝘁𝗲𝗺
+
+〔 📜 〕 𝗣𝗿𝗶𝗺𝗮𝗿𝘆 𝗗𝗶𝗿𝗲𝗰𝘁𝗶𝘃𝗲: [  ]
+〔 🔧 〕 𝗦𝗲𝗰𝗼𝗻𝗱𝗮𝗿𝘆 𝗗𝗶𝗿𝗲𝗰𝘁𝗶𝘃𝗲𝘀: [  ]
+━━━━━━━━━━━━━━━
+Input '𝗵𝗲𝗹𝗽' to access available commands and strategic guidance.
+━━━━━━━ ✕ ━━━━━━";
         if (body?.toLowerCase().startsWith('prefix')) {
                 api.sendMessage(message, threadID, messageID);
         }
